@@ -17,7 +17,7 @@ server.on("request", function(request, response) {
     } else {
         response.statusCode = 404;
         response.writeHead(200, {
-            "Content-Type": "image/png"
+            "Content-Type": "image/jpeg"
         })
         fs.readFile("./err.jpeg", "binary", function(err, img) {
             if (err) throw err;
